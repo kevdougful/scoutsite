@@ -31,7 +31,7 @@ const Home = () => {
           _dark={{ opacity: 0.6 }}
           height="500px"
         />
-        <Box _dark={{ bg: 'black' }} minH="100vh" pt="16">
+        <Box _dark={{ bg: "black" }} minH="100vh" pt="16">
           <Container
             maxW="container.xl"
             py={{ base: 10, lg: 20, xl: 40 }}
@@ -54,11 +54,11 @@ const Home = () => {
                     initialInView
                     background="linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.30))"
                     sx={{
-                      '-webkit-background-clip': 'text',
-                      '-webkit-text-fill-color': 'transparent',
+                      "-webkit-background-clip": "text",
+                      "-webkit-text-fill-color": "transparent",
                     }}
                   >
-                    Building blocks for rapid SaaS development
+                    Cub Scout Pack 572
                   </FallInPlace>
                 }
                 description={
@@ -68,9 +68,9 @@ const Home = () => {
                     textAlign="center"
                     initialInView
                   >
-                    Saas.js is an ecosystem of patterns, tools and packages
-                    <Br hidden={{ base: true, sm: false }} /> that help you
-                    build modern SaaS products with speed.
+                    Craig Elementary School
+                    <Br />
+                    Creve Coeur, MO
                   </FallInPlace>
                 }
               ></Hero>
@@ -92,7 +92,7 @@ const Home = () => {
         </Box>
       </Box>
     </Box>
-  )
+  );
 }
 
 const RequestAccess = () => {

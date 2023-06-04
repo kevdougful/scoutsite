@@ -79,6 +79,8 @@ export function SignupForm({ isOpen, onClose }: any) {
     content = (
       <>
         <FormLayout>
+          <Text fontSize="md">Sign up for our monthly newsletter!</Text>
+
           <FormControl>
             <FormLabel>Name</FormLabel>
             <Input
@@ -112,7 +114,7 @@ export function SignupForm({ isOpen, onClose }: any) {
           </Button>
         </FormLayout>
       </>
-    )
+    );
   }
 
   return (
