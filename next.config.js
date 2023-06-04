@@ -1,3 +1,5 @@
+/** @type {import('next').NextConfig} */
+
 const { withContentlayer } = require('next-contentlayer')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -8,6 +10,11 @@ const webpack = require('webpack')
 
 let config = {
   optimizeFonts: true,
+  reactStrictMode: true,
+  images: {
+    loader: "imgix",
+    path: "/img"
+  },
   reactStrictMode: true,
   typescript: {
     // turn of untill v2
