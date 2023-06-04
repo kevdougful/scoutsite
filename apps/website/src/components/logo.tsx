@@ -16,9 +16,10 @@ const Logo = (props) => {
       <rect fill="#ce2028" x="123.4" y="12.3" width="47.36" height="74.61" />
       <text
         fontSize="64px"
-        fontFamily="Arial-Black,Arial Black"
+        fontFamily="Arial"
+        fontWeight="bold"
         fill="#fff"
-        transform="translate(125.82 72.66)"
+        transform="translate(128.82 72.66)"
       >
         <tspan x="0" y="0">
           5
@@ -29,9 +30,10 @@ const Logo = (props) => {
       <rect fill="#ce2028" x="181.82" y="12.24" width="47.36" height="74.61" />
       <text
         fontSize="64px"
-        fontFamily="Arial-Black,Arial Black"
+        fontFamily="Arial"
+        fontWeight="bold"
         fill="#fff"
-        transform="translate(184.24 72.59)"
+        transform="translate(187.24 72.59)"
       >
         <tspan x="0" y="0">
           7
@@ -42,9 +44,10 @@ const Logo = (props) => {
       <rect fill="#ce2028" x="240.42" y="12.21" width="47.36" height="74.61" />
       <text
         fontSize="64px"
-        fontFamily="Arial-Black,Arial Black"
+        fontFamily="Arial"
+        fontWeight="bold"
         fill="#fff"
-        transform="translate(242.84 72.56)"
+        transform="translate(245.84 72.56)"
       >
         <tspan x="0" y="0">
           2
