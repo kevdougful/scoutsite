@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { allBlogs, Blog } from '.contentlayer/generated'
-import { MDXComponents } from '@/docs/components/mdx-components'
+import { MDXComponents } from "@/components/mdx-components";
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import readingTime from 'reading-time'

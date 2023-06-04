@@ -5,7 +5,7 @@ import {
   useClipboard,
 } from '@chakra-ui/react'
 import React from 'react'
-import { t } from '@/docs/utils/i18n'
+import { t } from "@/utils/i18n";
 
 import { CopyIcon, CheckIcon } from '@chakra-ui/icons'
 

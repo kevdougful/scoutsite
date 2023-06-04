@@ -54,7 +54,8 @@
     "remark-code-titles": "^0.1.2",
     "remark-emoji": "^3.0.2",
     "remark-gfm": "^3.0.1",
-    "remark-slug": "^7.0.1"
+    "remark-slug": "^7.0.1",
+    "webpack": "^5.85.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.45",

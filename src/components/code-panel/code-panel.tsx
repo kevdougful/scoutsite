@@ -1,5 +1,5 @@
 import { Language } from 'prism-react-renderer'
-import Highlight from '@/docs/components/mdx-components/codeblock/highlight'
+import Highlight from "@/components/mdx-components/codeblock/highlight";
 import { Box, BoxProps } from '@chakra-ui/react'
 
 import prismTheme from 'prism-react-renderer/themes/shadesOfPurple'

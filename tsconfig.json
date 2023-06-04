@@ -21,7 +21,6 @@
       "@/utils/*": ["src/utils/*"],
       "@/layouts/*": ["src/layouts/*"],
       "@/lib/*": ["src/lib/*"],
-      "@/docs/*": ["src/docs/*"],
       "@/hooks/*": ["src/hooks/*"],
       "@saas-ui/react": ["../../packages/saas-ui-react/src"],
       "contentlayer/generated": ["./.contentlayer/generated"]

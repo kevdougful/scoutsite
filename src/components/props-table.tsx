@@ -1,10 +1,10 @@
 import { chakra, Code, Flex, HStack, Stack, theme } from '@chakra-ui/react'
 import Link from 'next/link'
 import * as React from 'react'
-import { convertBackticksToInlineCode } from '@/docs/utils/convert-backticks-to-inline-code'
-import { InlineCode } from '@/docs/components/mdx-components/inline-code'
-import { Anchor } from '@/docs/components/mdx-components/anchor'
-import { t } from '@/docs/utils/i18n'
+import { convertBackticksToInlineCode } from "@/utils/convert-backticks-to-inline-code";
+import { InlineCode } from "@/components/mdx-components/inline-code";
+import { Anchor } from "@/components/mdx-components/anchor";
+import { t } from "@/utils/i18n";
 
 import * as ComponentProps from '@saas-ui/props-docs'
 
@@ -145,18 +145,18 @@ function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
 
   const featNotImplemented = (feat: string) => (
     <>
-      {feat} {t('component.props-table.for')} <InlineCode>{of}</InlineCode>{' '}
-      {t('component.props-table.are-not-implemented-in-the-default-theme')}{' '}
-      {t('component.props-table.you-can')}{' '}
+      {feat} {t("component.props-table.for")} <InlineCode>{of}</InlineCode>{" "}
+      {t("component.props-table.are-not-implemented-in-the-default-theme")}{" "}
+      {t("component.props-table.you-can")}{" "}
       <Link
-        href="/docs/theming/customize-theme#customizing-component-styles"
+        href="/theming/customize-theme#customizing-component-styles"
         passHref
       >
-        <Anchor>{t('component.props-table.extend-the-theme')}</Anchor>
-      </Link>{' '}
-      {t('component.props-table.to-implement-them')}
+        <Anchor>{t("component.props-table.extend-the-theme")}</Anchor>
+      </Link>{" "}
+      {t("component.props-table.to-implement-them")}
     </>
-  )
+  );
 
   if (!props) return []
 

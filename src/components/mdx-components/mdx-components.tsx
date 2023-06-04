@@ -4,17 +4,14 @@ import {
   ColorPalette,
   ColorPalettes,
   ColorWrapper,
-} from '@/docs/components/color-palette'
-import { Anchor } from '@/docs/components/mdx-components/anchor'
-import { InlineCode } from '@/docs/components/mdx-components/inline-code'
-import { LinkedHeading } from '@/docs/components/mdx-components/linked-heading'
-import { Pre } from '@/docs/components/mdx-components/pre'
-import { Table, TData, THead } from '@/docs/components/mdx-components/table'
-import {
-  FrameworkLinks,
-  FrameworkLinksPro,
-} from '@/docs/components/framework-link'
-import { VideoPlayer } from '@/docs/components/mdx-components/video-player'
+} from "@/components/color-palette";
+import { Anchor } from "@/components/mdx-components/anchor";
+import { InlineCode } from "@/components/mdx-components/inline-code";
+import { LinkedHeading } from "@/components/mdx-components/linked-heading";
+import { Pre } from "@/components/mdx-components/pre";
+import { Table, TData, THead } from "@/components/mdx-components/table";
+import { FrameworkLinks, FrameworkLinksPro } from "@/components/framework-link";
+import { VideoPlayer } from "@/components/mdx-components/video-player";
 import * as React from 'react'
 import CodeBlock from './codeblock/codeblock'
 import ComponentLinks from './component-links'

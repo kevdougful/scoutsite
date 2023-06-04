@@ -25,7 +25,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 import Logo from '@/components/layout/logo'
 import { SidebarContent } from './sidebar/sidebar'
-import { t } from '@/docs/utils/i18n'
+import { t } from "@/utils/i18n";
 
 import headerNav from '@/data/header-nav'
 

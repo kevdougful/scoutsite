@@ -7,8 +7,6 @@ import { useRouter } from "next/router";
 import headerNav from "@/data/header-nav";
 import NavLink from "@/components/nav-link";
 import { useScrollSpy } from "@/hooks/use-scrollspy";
-import { MobileNavButton } from "@/docs/components/mobile-nav";
-import { MobileNavContent } from "@/docs/components/mobile-nav";
 import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
 import ThemeToggle from "./theme-toggle";

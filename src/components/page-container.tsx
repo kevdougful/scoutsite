@@ -10,12 +10,12 @@ import {
   Spacer,
 } from '@chakra-ui/react'
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav'
-import EditPageLink from '@/docs/components/edit-page-button'
-import SEO, { SEOProps } from '@/components/seo'
-import TableOfContent from '@/docs/components/table-of-content'
-import { convertBackticksToInlineCode } from '@/docs/utils/convert-backticks-to-inline-code'
+import EditPageLink from "@/components/edit-page-button";
+import SEO, { SEOProps } from "@/components/seo";
+import TableOfContent from "@/components/table-of-content";
+import { convertBackticksToInlineCode } from "@/utils/convert-backticks-to-inline-code";
 import PageTransition from './page-transition'
-import { t } from '@/docs/utils/i18n'
+import { t } from "@/utils/i18n";
 import { BackgroundGradient } from '@/components/background-gradient'
 
 import { formatRelative } from 'date-fns'

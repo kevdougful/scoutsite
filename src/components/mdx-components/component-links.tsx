@@ -15,7 +15,7 @@ import {
 import { FaNpm, FaGithub, FaYoutube } from 'react-icons/fa'
 import { FiLock } from 'react-icons/fi'
 import StorybookIcon from '../storybook-icon'
-import { t } from '@/docs/utils/i18n'
+import { t } from "@/utils/i18n";
 
 type ComponentLinkProps = LinkProps & {
   icon?: React.ElementType

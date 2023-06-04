@@ -7,8 +7,8 @@ import remarkEmoji from 'remark-emoji'
 import remarkGfm from 'remark-gfm'
 import remarkSlug from 'remark-slug'
 import docsConfig from './src/data/docs-config'
-import { getTableOfContents } from './src/docs/utils/mdx-utils'
-import { rehypeMdxCodeMeta } from './src/docs/utils/rehype-code-meta'
+import { getTableOfContents } from './src/utils/mdx-utils'
+import { rehypeMdxCodeMeta } from './src/utils/rehype-code-meta'
 
 const computedFields: ComputedFields = {
   slug: {
@@ -53,7 +53,7 @@ const Blog = defineDocumentType(() => ({
 
 const Doc = defineDocumentType(() => ({
   name: 'Doc',
-  filePathPattern: 'docs/**/*.mdx',
+  filePathPattern: '**/*.mdx',
   bodyType: 'mdx',
   contentType: 'mdx',
   fields: {
