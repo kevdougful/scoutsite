@@ -3,7 +3,7 @@ import { Link } from '@saas-ui/react'
 import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 import Footer, { Copyright, FooterLink } from './layout/footer'
 
-import Logo from './saas-ui'
+import Logo from "./logo";
 
 const CustomFooter = () => {
   return (

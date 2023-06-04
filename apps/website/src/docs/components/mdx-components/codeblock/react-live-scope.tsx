@@ -6,7 +6,7 @@ import * as SaasUI from '@saas-ui/react'
 import * as AppShell from '@saas-ui/app-shell'
 import * as Sidebar from '@saas-ui/sidebar'
 
-import SaasUILogo from '@/components/saas-ui'
+import SaasUILogo from "@/components/logo";
 import FocusLock from 'react-focus-lock'
 
 import {

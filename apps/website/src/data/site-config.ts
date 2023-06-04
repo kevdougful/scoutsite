@@ -1,4 +1,4 @@
-import Logo from '../components/saas-ui'
+import Logo from '../components/logo'
 const baseUrl = 'https://github.com/saas-js/saas-ui'
 
 const siteConfig = {
