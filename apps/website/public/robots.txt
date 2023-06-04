@@ -1,0 +1,4 @@
+Sitemap: https://saas-ui.dev/sitemap.xml
+
+User-agent: *
+Allow: /*
