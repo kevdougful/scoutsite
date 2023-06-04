@@ -1,33 +1,34 @@
 import * as React from 'react'
 import { HStack, IconButton, Link, Tooltip } from '@chakra-ui/react'
-import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaFacebook } from "react-icons/fa";
+import { GiFleurDeLys } from "react-icons/gi";
+import { useRouter } from "next/router";
 
-import { useRouter } from 'next/router'
+import headerNav from "@/data/header-nav";
+import NavLink from "@/components/nav-link";
+import { useScrollSpy } from "@/hooks/use-scrollspy";
+import { MobileNavButton } from "@/docs/components/mobile-nav";
+import { MobileNavContent } from "@/docs/components/mobile-nav";
+import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
-import headerNav from '@/data/header-nav'
-import NavLink from '@/components/nav-link'
-import { useScrollSpy } from '@/hooks/use-scrollspy'
-import { MobileNavButton } from '@/docs/components/mobile-nav'
-import { MobileNavContent } from '@/docs/components/mobile-nav'
-import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
-
-import ThemeToggle from './theme-toggle'
+import ThemeToggle from "./theme-toggle";
+import { Br } from "@/components/typography";
 
 const Header = () => {
-  const mobileNav = useDisclosure()
-  const router = useRouter()
+  const mobileNav = useDisclosure();
+  const router = useRouter();
   const activeId = useScrollSpy(
     headerNav.filter(({ id }) => id).map(({ id }) => `[id="${id}"]`),
     {
       threshold: 0.75,
     }
-  )
+  );
 
-  const mobileNavBtnRef = React.useRef<HTMLButtonElement>()
+  const mobileNavBtnRef = React.useRef<HTMLButtonElement>();
 
   useUpdateEffect(() => {
-    mobileNavBtnRef.current?.focus()
-  }, [mobileNav.isOpen])
+    mobileNavBtnRef.current?.focus();
+  }, [mobileNav.isOpen]);
 
   return (
     <HStack flex="1" ps="4">
@@ -35,7 +36,7 @@ const Header = () => {
         {headerNav.map(({ href, id, ...props }, i) => {
           return (
             <NavLink
-              display={['none', null, 'block']}
+              display={["none", null, "block"]}
               href={href || `/#${id}`}
               key={i}
               isActive={
@@ -44,39 +45,28 @@ const Header = () => {
               }
               {...props}
             />
-          )
+          );
         })}
 
-        <Tooltip label="Discord community">
+        <Tooltip label={<>stlbsa.org</>}>
           <IconButton
             variant="ghost"
-            aria-label="discord"
-            icon={<FaDiscord size="14" />}
+            aria-label="council"
+            icon={<GiFleurDeLys size="14" />}
             borderRadius="md"
             as={Link}
-            href="https://discord.gg/4PmJGFcAjX"
+            href="https://www.stlbsa.org"
           />
         </Tooltip>
 
-        <Tooltip label="Twitter">
+        <Tooltip label="Facebook">
           <IconButton
             variant="ghost"
-            aria-label="twitter"
-            icon={<FaTwitter size="14" />}
+            aria-label="facebook"
+            icon={<FaFacebook size="14" />}
             borderRadius="md"
             as={Link}
-            href="https://twitter.com/saas_js"
-          />
-        </Tooltip>
-
-        <Tooltip label="Github">
-          <IconButton
-            variant="ghost"
-            aria-label="github"
-            icon={<FaGithub size="14" />}
-            borderRadius="md"
-            as={Link}
-            href="https://github.com/saas-js/saas-js"
+            href="https://www.facebook.com/groups/pack572photos"
           />
         </Tooltip>
 
@@ -94,7 +84,7 @@ const Header = () => {
         /> */}
       </HStack>
     </HStack>
-  )
-}
+  );
+};
 
 export default Header

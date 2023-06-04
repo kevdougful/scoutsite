@@ -2,7 +2,7 @@
   "name": "website",
   "version": "1.2.3",
   "private": true,
-  "author": "Eelco Wiersma <eelco@appulse.nl>",
+  "author": "Kevin Coffey <kevdougful@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "yarn gen:contentlayer && next build",

@@ -1,12 +1,12 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Saas.js</title>
+      <title>Pack 572 Creve Coeur, MO</title>
       <link>https://saas-js.dev</link>
-      <description>Building blocks for rapid SaaS development.</description>
+      <description>BSA Cub Scout Pack 572 chartered at Craig Elementary School located in Creve Coeur, MO</description>
       <language>en_US</language>
-      <managingEditor>hello@saas-ui.dev (Eelco Wiersma)</managingEditor>
-      <webMaster>hello@saas-ui.dev (Eelco Wiersma)</webMaster>
+      <managingEditor>kevdougful@gmail.com (Kevin Coffey)</managingEditor>
+      <webMaster>kevdougful@gmail.com (Kevin Coffey)</webMaster>
       <lastBuildDate>Thu, 27 Jan 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://saas-js.dev/blog.xml" rel="self" type="application/rss+xml"/>
       
@@ -18,7 +18,7 @@
 I'm proud to introduce you to Saas UI, an advanced component library built on top of Chakra UI.
 Ove...</description>
     <pubDate>Thu, 27 Jan 2022 00:00:00 GMT</pubDate>
-    <author>hello@saas-ui.dev (Eelco Wiersma)</author>
+    <author>kevdougful@gmail.com (Kevin Coffey)</author>
     
   </item>
 

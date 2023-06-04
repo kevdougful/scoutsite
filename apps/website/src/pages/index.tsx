@@ -15,13 +15,13 @@ import SEO from '@/components/seo'
 import { BackgroundGradientRadial } from '@/components/background-gradient-radial'
 
 const Home = () => {
-  const [animateGlow, setAnimate] = React.useState()
+  const [animateGlow, setAnimate] = React.useState();
   return (
     <Box>
       <SEO
-        title="Saas.js"
-        description="Building blocks for rapid SaaS development."
-        titleTemplate="%s - Building blocks for rapid SaaS development."
+        title="Pack 572"
+        description="BSA Cub Scout Pack 572 chartered to Craig Elementary School located in Creve Coeur, MO"
+        titleTemplate="%s"
       />
 
       <Box mb={8} w="full" position="relative" overflow="hidden">
@@ -93,22 +93,22 @@ const Home = () => {
       </Box>
     </Box>
   );
-}
+};
 
 const RequestAccess = () => {
   return (
     <Container
       borderRadius="md"
-      bg={useColorModeValue('white', 'whiteAlpha.50')}
+      bg={useColorModeValue("white", "whiteAlpha.50")}
       borderWidth="1px"
-      borderColor={useColorModeValue('gray.300', 'grayAlpha.700')}
+      borderColor={useColorModeValue("gray.300", "grayAlpha.700")}
       p={8}
-      width={['80vw', null, 'md']}
+      width={["80vw", null, "md"]}
     >
       <SignupForm />
     </Container>
-  )
-}
+  );
+};
 
 export default Home
 

@@ -102,7 +102,7 @@ export function SignupForm({ isOpen, onClose }: any) {
           <Text
             fontSize="sm"
             color="muted"
-          >{`Don't worry, we hate spam too. We'll send you one follow-up email and will notify when there are important updates.`}</Text>
+          >{`Don't worry, we hate spam too. We'll send you one follow-up email and our newsletter once a month.`}</Text>
 
           <Button
             colorScheme="primary"

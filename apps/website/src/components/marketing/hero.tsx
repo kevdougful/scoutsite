@@ -1,13 +1,13 @@
 import { Container, Flex } from '@chakra-ui/layout'
-import { HTMLChakraProps, ThemingProps } from '@chakra-ui/react'
-import PageTitle from './page-title'
+import { Box, HTMLChakraProps, ThemingProps } from "@chakra-ui/react";
+import PageTitle from "./page-title";
 
 interface HeroProps
-  extends Omit<HTMLChakraProps<'div'>, 'children' | 'title'>,
-    ThemingProps<'Hero'> {
-  title: string | React.ReactNode
-  description?: string | React.ReactNode
-  children?: React.ReactNode
+  extends Omit<HTMLChakraProps<"div">, "children" | "title">,
+    ThemingProps<"Hero"> {
+  title: string | React.ReactNode;
+  description?: string | React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function Hero({
@@ -27,5 +27,5 @@ export default function Hero({
         {children}
       </Container>
     </Flex>
-  )
+  );
 }

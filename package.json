@@ -1,22 +1,22 @@
 {
-  "name": "saas-js",
+  "name": "scoutsite",
   "description": "An open source ecosystem of patterns, tools and packages for SaaS products.",
   "private": true,
-  "author": "Eelco Wiersma <eelco@appulse.nl>",
+  "author": "Kevin Coffey <kevdougful@gmail.com>",
   "license": "MIT",
   "homepage": "https://saas-js.dev/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/saas-js/saas-js"
+    "url": "git+https://github.com/kevdougful/scoutsite"
   },
   "keywords": [
     "saas-js",
     "saas",
-    "boilerplate",
+    "saas-ui",
+    "chakra",
     "javascript",
     "typescript",
-    "database",
-    "prisma",
+    "firebase",
     "react"
   ],
   "scripts": {
