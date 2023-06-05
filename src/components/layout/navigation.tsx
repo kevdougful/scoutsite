@@ -1,5 +1,14 @@
 import * as React from 'react'
-import { HStack, IconButton, Link, Tooltip } from '@chakra-ui/react'
+import {
+  HStack,
+  IconButton,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Tooltip,
+} from "@chakra-ui/react";
 import { FaFacebook } from "react-icons/fa";
 import { GiFleurDeLys } from "react-icons/gi";
 import { useRouter } from "next/router";
@@ -11,6 +20,10 @@ import { useDisclosure, useUpdateEffect } from "@chakra-ui/react";
 
 import ThemeToggle from "./theme-toggle";
 import { Br } from "@/components/typography";
+import { AuthMenu } from "@/components/auth/auth-menu";
+import { MobileNavButton, MobileNavContent } from "../mobile-nav";
+import { PersonaAvatar } from "@saas-ui/react";
+import { useUser } from "reactfire";
 
 const Header = () => {
   const mobileNav = useDisclosure();
@@ -21,6 +34,7 @@ const Header = () => {
       threshold: 0.75,
     }
   );
+  const { data: user } = useUser();
 
   const mobileNavBtnRef = React.useRef<HTMLButtonElement>();
 
@@ -50,7 +64,7 @@ const Header = () => {
           <IconButton
             variant="ghost"
             aria-label="council"
-            icon={<GiFleurDeLys size="14" />}
+            icon={<GiFleurDeLys size="22" />}
             borderRadius="md"
             as={Link}
             href="https://www.stlbsa.org"
@@ -61,25 +75,27 @@ const Header = () => {
           <IconButton
             variant="ghost"
             aria-label="facebook"
-            icon={<FaFacebook size="14" />}
+            icon={<FaFacebook size="22" />}
             borderRadius="md"
             as={Link}
             href="https://www.facebook.com/groups/pack572photos"
           />
         </Tooltip>
 
-        {/* <ThemeToggle /> */}
+        <AuthMenu />
 
-        {/* <MobileNavButton
+        <ThemeToggle />
+
+        <MobileNavButton
           ref={mobileNavBtnRef}
           aria-label="Open Menu"
           onClick={mobileNav.onOpen}
-        /> */}
+        />
 
-        {/* <MobileNavContent
+        <MobileNavContent
           isOpen={mobileNav.isOpen}
           onClose={mobileNav.onClose}
-        /> */}
+        />
       </HStack>
     </HStack>
   );

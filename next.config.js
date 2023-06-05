@@ -24,15 +24,15 @@ let config = {
     externalDir: true,
   },
   compiler: {},
-  async redirects() {
-    return [
-      {
-        source: '/docs',
-        destination: '/docs/introduction',
-        permanent: false,
-      },
-    ]
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/docs',
+  //       destination: '/docs/introduction',
+  //       permanent: false,
+  //     },
+  //   ]
+  // },
   webpack: (config, { defaultLoaders }) => {
     const fileLoaderRule = config.module.rules.find(
       (rule) => rule.test && rule.test.test('.svg')

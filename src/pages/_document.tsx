@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/react'
+// import { FirebaseAppProvider } from "reactfire";
 
 import theme from '../styles/theme'
 
@@ -39,7 +40,7 @@ class MyDocument extends Document {
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         </body>
       </Html>
-    )
+    );
   }
 }
 

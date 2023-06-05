@@ -4,50 +4,49 @@ import Layout from '@/components/layout'
 
 import theme from '../styles/theme'
 
-import { SaasProvider, ModalsProvider, AuthProvider } from '@saas-ui/react'
-import { NProgressNextRouter } from '@saas-ui/nprogress'
+import {
+  SaasProvider,
+  ModalsProvider,
+  AuthProvider as SaaSAuthProvider,
+} from "@saas-ui/react";
+import { NProgressNextRouter } from "@saas-ui/nprogress";
+import { AuthProvider, FirebaseAppProvider, useFirebaseApp } from "reactfire";
+import { getAuth } from "firebase/auth";
+import app from "../../firebaseClient";
 
-import Footer from '@/components/footer'
-import { useRouter } from 'next/router'
+import Footer from "@/components/footer";
+import { useRouter } from "next/router";
 
 const MyApp = ({ Component, pageProps }: AppProps<any>) => {
-  const router = useRouter()
+  const auth = getAuth(app);
+  const router = useRouter();
+
   return (
     <SaasProvider
       theme={theme}
       colorModeManager={{
-        get: () => 'dark',
+        get: () => "dark",
         set: () => {},
-        type: 'localStorage',
+        type: "localStorage",
       }}
     >
-      <AuthProvider>
-        <ModalsProvider>
-          <Layout
-            announcement={pageProps.announcement}
-            header={pageProps.header}
-            footer={pageProps.footer !== false ? <Footer /> : null}
-          >
-            <Script
-              id="pirschjs"
-              strategy="afterInteractive"
-              src="https://api.pirsch.io/pirsch.js"
-              data-code="0wmOd91WUKqHhN2foO6rJdvW4Ak2Wscq"
-            />
-            <Script
-              id="pirscheventsjs"
-              strategy="afterInteractive"
-              src="https://api.pirsch.io/pirsch-events.js"
-              data-code="0wmOd91WUKqHhN2foO6rJdvW4Ak2Wscq"
-            />
-            <NProgressNextRouter router={router} />
-            <Component {...pageProps} />
-          </Layout>
-        </ModalsProvider>
-      </AuthProvider>
+      <FirebaseAppProvider firebaseApp={app}>
+        <AuthProvider sdk={auth}>
+          <ModalsProvider>
+            <Layout
+              announcement={pageProps.announcement}
+              header={pageProps.header}
+              footer={pageProps.footer !== false ? <Footer /> : null}
+            >
+              <NProgressNextRouter router={router} />
+              <Component {...pageProps} />
+            </Layout>
+          </ModalsProvider>
+        </AuthProvider>
+      </FirebaseAppProvider>
     </SaasProvider>
-  )
-}
+  );
+};
 
 export default MyApp
 
